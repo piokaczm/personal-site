@@ -65,11 +65,16 @@ span {
     font-size: 12px;
 }
 
-.cv {
-    font-family: GadugiRegular;
-    font-size: 12px; 
-    list-style: square;
+a {
+  text-decoration: none;
+}
 
+a:active{
+  outline: none;
+}
+
+a:focus{
+  outline: none;
 }
 
 
