@@ -5,7 +5,7 @@ The app was started using [angular-seed](https://github.com/angular/angular-seed
 
 ### Contributions
 
-If you see any mistakes, or code which could be wrote better free to contribute. However as it's my first Angular app, please include relevant comments with explanations.
+If you see any mistakes, or code which could be wrote better, feel free to contribute. However as it's my first Angular app, please include relevant comments with explanations.
 
 All .js files are in app/js directory,
 all .html partials in app/partials,
