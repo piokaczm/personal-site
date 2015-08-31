@@ -80,16 +80,11 @@ span {
     width:100%;
     background-color: rgba(118, 239, 209, 1);
     display: none;
-    /*ANIMATION*/
-    transition: margin-top 1s ease 0.1s;
-    transition: background-color, border-color, 0,5s ease;
-    -webkit-transition: margin-top 1s ease 0.1s;
-    -webkit-transition: background-color, border-color, 0,5s ease;
 }
 
 #menu_list{
     list-style: none;
-    width:440px;
+    width:600px;
     height: 65px;
     position:relative;
     margin: 0px auto 0 auto;
@@ -115,23 +110,6 @@ span {
     text-align: center;
     cursor: pointer;
 }
-
-#trigger {
-
-}
-
-#trigger_div {
-    text-align: center;
-    position: relative;
-    height: 25px;
-    width: 100%;
-    background-color: rgba(100, 221, 191, 1);
-    margin-top: -45px;
-    min-width: 475px;
-
-    
-}
-
 
 
 /*MENU ANIMATIONS*/

@@ -2,6 +2,6 @@
 
 var personalSiteController = angular.module('personalSiteControllers', []);
 
-app.controller("NavController", ['$scope', function($scope) {
+personalSite.controller("NavController", ['$scope', function($scope) {
 
 }]);

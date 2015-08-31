@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var app = angular.module('personalSite', [
+var personalSite = angular.module('personalSite', [
   'ngRoute',
   'personalSiteControllers'
 ]);
