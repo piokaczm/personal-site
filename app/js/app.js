@@ -8,7 +8,7 @@ var app = angular.module('personalSite', [
 
 personalSite.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-  when('/', {
+  when('/home', {
     templateUrl: 'partials/home.html'
   }).
   when('/cv', {
@@ -22,6 +22,9 @@ personalSite.config(['$routeProvider', function($routeProvider) {
   }).
   when('/projects', {
     templateUrl: 'partials/projects.html'
+  }).
+  otherwise({
+    redirectTo: '/home'
   });
 }]);
 
