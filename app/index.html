@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
+<body ng-controller="NavController">
   
-  <nav class="menu_container" ng-controller="NavController">
+  <nav class="menu_container">
     <ul id="menu_list">
       <li class="menu_item"><h1 class="menu_header" id="home">HOME</h1></li>
       <li class="menu_item"><h1 class="menu_header" id="cv">CV</h1></li>
@@ -25,6 +25,7 @@
     </ul>
   </nav>
   
+  <ng-view></ng-view>
   
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
