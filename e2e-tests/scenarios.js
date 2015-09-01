@@ -4,11 +4,11 @@
 
 describe('personalSite', function() {
 
-  var home = element(by.repeater('link in links').row(0));
-  var cv = element(by.repeater('link in links').row(1));
-  var projects = element(by.repeater('link in links').row(2));
-  var works = element(by.repeater('link in links').row(3));
-  var contact = element(by.repeater('link in links').row(4));
+  var home = element(by.repeater('link in links').row(0)).element(by.css('h1'));
+  var cv = element(by.repeater('link in links').row(1)).element(by.css('h1'));
+  var projects = element(by.repeater('link in links').row(2)).element(by.css('h1'));
+  var works = element(by.repeater('link in links').row(3)).element(by.css('h1'));
+  var contact = element(by.repeater('link in links').row(4)).element(by.css('h1'));
   
   beforeEach(function() {
     browser.get('app/index.html#/home');
@@ -26,13 +26,13 @@ describe('personalSite', function() {
   it('should navigate to proper sites', function() {
     home.click();
     expect(browser.getCurrentUrl()).toMatch(/\/home/);
-    cv.element(by.css('h1')).click();
+    cv.click();
     expect(browser.getCurrentUrl()).toMatch(/\/cv/);
-    projects.element(by.css('h1')).click();
+    projects.click();
     expect(browser.getCurrentUrl()).toMatch(/\/projects/);
-    works.element(by.css('h1')).click();
+    works.click();
     expect(browser.getCurrentUrl()).toMatch(/\/works/);
-    contact.element(by.css('h1')).click();
+    contact.click();
     expect(browser.getCurrentUrl()).toMatch(/\/contact/);
   });
   
@@ -50,7 +50,7 @@ describe('personalSite', function() {
   describe('cv site', function() {
     
     beforeEach(function() {
-      cv.element(by.css('h1')).click();
+      cv.click();
     });
     
     it('should display cv', function() {
