@@ -25,4 +25,8 @@ personalSiteController.controller("WorksController", ['$http', '$scope', functio
     $scope.mainImage = $scope.images.imageList[0];
   });
   
+  $scope.setMainImage = function(img) {
+   $scope.mainImage = img; 
+  }
+  
 }]);

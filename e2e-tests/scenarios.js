@@ -77,6 +77,10 @@ describe('personalSite', function() {
       expect(element.all(by.repeater('img in images.imageList')).count()).toEqual(9);      
     });
     
+    it('should display 2 iframes', function() {
+      expect(element.all(by.css('iframe')).count()).toEqual(2);
+    });
+    
     it('should display initial main image, and change it on thumb click', function() {
       var second_img = element(by.repeater('img in images.imageList').row(1)).element(by.css('img'));
       expect(element(by.css('#big_foto')).isPresent()).toBe(true);
