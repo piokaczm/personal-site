@@ -17,3 +17,12 @@ personalSiteController.controller("CvController", ['$http', '$scope', function($
   });
   
 }]);
+
+personalSiteController.controller("WorksController", ['$http', '$scope', function($http, $scope) {
+  
+  $http.get('json/images.json').success(function(data) {
+    $scope.images = data;
+    $scope.mainImage = $scope.images.imageList[0];
+  });
+  
+}]);

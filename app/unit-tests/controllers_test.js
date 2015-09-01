@@ -1,6 +1,8 @@
 'use strict';
 
 describe('personalSite Controllers', function() {
+
+  beforeEach(module('personalSite'));
   
   describe('CvController', function(){
     var scope, ctrl, $httpBackend;
@@ -14,7 +16,6 @@ describe('personalSite Controllers', function() {
                   }
                 };
     
-    beforeEach(module('personalSite'));
     
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
@@ -32,6 +33,27 @@ describe('personalSite Controllers', function() {
       expect(scope.technologies).toEqual("piczsko, dupsko");                               
     });
   
+  });
+  
+  
+  describe('WorksController', function() {
+    var scope, ctrl, $httpBackend;
+    var imagesData = {imageList: ['src/img.jpg', 'src/img2.jpg']};
+    
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('json/images.json').respond(imagesData);
+      scope = $rootScope.$new();
+      ctrl = $controller('WorksController', { $scope: scope });
+    }));
+          
+    it('should provide images urls', function() {
+      expect(scope.images).toBeUndefined();
+      $httpBackend.flush();
+      expect(scope.images).toEqual(imagesData);
+      expect(scope.mainImage).toEqual('src/img.jpg');
+    });
+    
   });
                
 });

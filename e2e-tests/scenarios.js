@@ -67,4 +67,23 @@ describe('personalSite', function() {
     
   });
   
+  describe('works site', function() {
+    
+    beforeEach(function() {
+      works.click();
+    });
+    
+    it('should display 9 images', function() {
+      expect(element.all(by.repeater('img in images.imageList')).count()).toEqual(9);      
+    });
+    
+    it('should display initial main image, and change it on thumb click', function() {
+      var second_img = element(by.repeater('img in images.imageList').row(1)).element(by.css('img'));
+      expect(element(by.css('#big_foto')).isPresent()).toBe(true);
+      second_img.click();
+      expect(element(by.css('#big_foto')).getAttribute('src')).toEqual(second_img.getAttribute('src'));
+    });
+    
+  });
+  
 });
