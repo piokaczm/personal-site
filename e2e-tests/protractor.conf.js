@@ -5,11 +5,13 @@ exports.config = {
     '*.js'
   ],
 
-  capabilities: {
+  multiCapabilities: [{
     'browserName': 'chrome'
-  },
+  }, {
+    'browserName': 'firefox' 
+  }],
 
-  baseUrl: 'http://localhost:8000/app/',
+  baseUrl: 'http://localhost:8000/',
 
   framework: 'jasmine',
 
