@@ -1,43 +1,36 @@
-<div id="cv_container">                
+<div id="cv_container" ng-controller="CvController">                
   
   <h2>Curriculum Vitae</h2><br />
   
-  <p><span>WORK EXPERIENCE</span><br /></p>
-  <p>Steiner Store - Founder & Owner (2013 - Present)</p>
-  <ul class="cv">
-    <li>Managing relations with domestic and foreign clothing brands and distributors</li>
-    <li>Conducting trade transactions with domestic and international partners</li>
-    <li>International purchases and sales as a subcontractor for GH Yes company</li>
-    <li>Administration of the webshop</li>
-    <li>Decision making regarding quantity and product selection</li>
-    <li>Domestic and international customer service</li>
-    <li>Designing promotional graphics</li>
-    <li>Managing the process of preparing and shipping orders</li>
-    <li>Managing the social media presence on Facebook and Instagram</li>
-  </ul>
+  <p><span>{{cv.work.header | uppercase}}</span><br /></p>
+  <p>{{cv.work.listName}}</p>
+  <cv-bullets list='cv.work.bullets'></cv-bullets>
   
-  <p><span>EDUCATION</span><br /></p>
-  <p>University of Economics in Katowice (2011 - 2014)</p>
-  <ul class="cv">
-    <li>Bachelor’s Degree in Economics with major in International Commerce</li>
-  </ul>
-  <p>M.Kopernik High School in Katowice (2008 - 2011)</p>
-  <ul class="cv">
-    <li>Bilingual high school diploma - un baccalauréat bilingue</li>
-    <li>Certificate of proficiency in French issued by the French Embassy in Poland</li>
-  </ul>
+  <p><span>{{cv.webDev.header | uppercase}}</span><br /></p>
   
-  <p><span>PERSONAL SKILLS</span></p>
-  <p>Polish - Native, English - C1, French - B2, German - A2, Russian - A1</p>
-  <p>Driving licence category B</p>
-  <ul class="cv">
-    <li>Adobe Photoshop</li>
-    <li>DxO Optics Pro</li>
-    <li>MS Office</li>
-    <li>Basic Python, HTML, CSS and jQuery skills</li>
-    <li>WordPress</li>
-    <li>Adobe InDesign</li>
-  </ul>
+  <p><span>{{cv.webDev.skills.title + ':'}}</span></p>
+  <p>{{technologies}}</p>
+  
+  <p><span>{{cv.webDev.projects.title + ':'}}</span></p>  
+  <p>{{cv.webDev.projects.kgo.title}}</p>
+  <cv-bullets list='cv.webDev.projects.kgo.bullets'></cv-bullets>
+  
+  <p>{{cv.webDev.projects.portfolio.title}}</p>
+  <cv-bullets list='cv.webDev.projects.portfolio.bullets'></cv-bullets>
+  
+  <p>{{cv.webDev.projects.gyst.title}}</p>
+  <cv-bullets list='cv.webDev.projects.gyst.bullets'></cv-bullets>
+  
+    
+  <p><span>{{cv.education.header | uppercase}}</span><br /></p>
+  <p>{{cv.education.ue.title}}</p>
+  <cv-bullets list='cv.education.ue.bullets'></cv-bullets>
+  <p>{{cv.education.kopernik.title}}</p>
+  <cv-bullets list='cv.education.kopernik.bullets'></cv-bullets>
+  
+  <p><span>{{cv.personal.header | uppercase}}</span></p>
+  <p>{{languages}}</p>
+  <cv-bullets list='cv.personal.bullets'></cv-bullets>
   <br />
 
   <div id="download_button">

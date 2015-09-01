@@ -3,7 +3,8 @@
 // Declare app level module which depends on views, and components
 var personalSite = angular.module('personalSite', [
   'ngRoute',
-  'personalSiteControllers'
+  'personalSiteControllers',
+  'personalSiteDirectives'
 ]);
 
 personalSite.config(['$routeProvider', function($routeProvider) {

@@ -1,0 +1,93 @@
+{
+  "work": {
+   "header": "work experience",
+    "listName": "Steiner Store - Founder & Owner (2013 - Present)",
+    "bullets": [
+      "Conducting trade transactions with domestic and international partners",
+      "International purchases, sales and project management as a subcontractor",
+      "Managing relations with domestic and foreign clothing brands and distributors",
+      "Domestic and international customer service",
+      "Administration of the webshop",
+      "Designing promotional graphics"
+      ]
+  },
+  "education": {
+    "header": "education",
+    "kopernik": {
+      "title": "M.Kopernik High School in Katowice (2008 - 2011)",
+      "bullets": [
+      "Bilingual high school diploma - un baccalauréat bilingue",
+      "Certificate of proficiency in French issued by the French Embassy in Poland"
+      ]
+    },
+    "ue": {
+      "title": "University of Economics in Katowice (2011 - 2014)",
+      "bullets": [
+        "Bachelor’s Degree in Economics with major in International Commerce"
+        ]
+    }
+  },
+  "personal": {
+    "header": "personal skills",
+    "languages": [
+      "Polish - Native",
+      "English - C1",
+      "French - B2",
+      "German - A2",
+      "Russian - A1"
+      ],
+    "bullets": [
+      "Driving licence category B",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "DxO Optics",
+      "MS Office"
+      ]
+  },
+  "webDev": {
+    "header": "software development",
+    "skills": {
+      "title": "Techonologies",
+      "list": [
+        "Ruby",
+        "Ruby on Rails",
+        "JavaScript (+CoffeeScript)",
+        "AngularJS",
+        "HTML",
+        "CSS (+Sass)",
+        "Git",
+        "jQuery",
+        "Bootstrap",
+        "Heroku"
+        ]  
+    },
+    "projects": {
+      "title": "Projects",
+      "kgo": {
+        "title": "KGO - Kolezenska Giełda Ostrokołowa",
+        "bullets": [
+          "Development of the RoR webapp",
+          "Layout design",
+          "Deployment and maintenance (Heroku)",
+          "Tests based on MiniTest"
+          ]
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "bullets": [
+          "Previously developed as a simple HTML + CSS + jQuery site",
+          "Ported to AngularJS",
+          "Karma and Protractor tests"
+          ]
+      },
+      "gyst": {
+        "title": "GYST - Get Your Shit Together",
+        "bullets": [
+          "Work in progress",
+          "RoR backend with AngularJS frontend",
+          "Tests based on Rspec, Cucumber and FactoryGirl"
+          ]
+      }
+    }
+  }
+}
