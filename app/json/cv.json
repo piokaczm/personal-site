@@ -47,16 +47,16 @@
   "webDev": {
     "header": "software development",
     "skills": {
-      "title": "Techonologies",
+      "title": "Technologies",
       "list": [
         "Ruby",
         "Ruby on Rails",
         "JavaScript (+CoffeeScript)",
+        "jQuery",
         "AngularJS",
         "HTML",
         "CSS (+Sass)",
         "Git",
-        "jQuery",
         "Bootstrap",
         "Heroku"
         ]  
@@ -85,7 +85,7 @@
         "bullets": [
           "Work in progress",
           "RoR backend with AngularJS frontend",
-          "Tests based on Rspec, Cucumber and FactoryGirl"
+          "Tests based on Karma, Protractor, Rspec, Cucumber and FactoryGirl"
           ]
       }
     }
