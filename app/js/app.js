@@ -25,6 +25,15 @@ personalSite.config(['$routeProvider', function($routeProvider) {
   when('/projects', {
     templateUrl: 'partials/projects.html'
   }).
+  when('/projects/kgo', {
+    templateUrl: 'partials/kgo.html'
+  }).
+  when('/projects/gyst', {
+    templateUrl: 'partials/gyst.html'
+  }).
+  when('/projects/portfolio', {
+    templateUrl: 'partials/portfolio.html'
+  }).
   otherwise({
     redirectTo: '/home'
   });

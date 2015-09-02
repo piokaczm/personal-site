@@ -4,20 +4,23 @@
    "description": "",
    "techDescription": "",
    "thumbnail": "css/images/kgo.jpg",
-   "images": []
+   "images": [],
+   "link": "kgo"
  },
  "gyst": {
    "name": "GYST - Get Your Shit Together",
    "description": "",
    "techDescription": "",
    "thumbnail": "css/images/gyst.jpg",
-   "images": []
+   "images": [],
+   "link": "gyst"
  },
  "portfolio": {
    "name": "Portfolio",
    "description": "",
    "techDescription": "",
    "thumbnail": "css/images/portfolio.jpg",
-   "images": []
+   "images": [],
+   "link": "portfolio"
  }
 }

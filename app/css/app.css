@@ -29,7 +29,7 @@ body {
     width:100%;
     height: 100%;
     margin:auto;
-    overflow: auto;
+    overflow-x: hidden;
 }
 /* STYLE */
 
@@ -362,8 +362,11 @@ iframe {
     margin-top: 100px;
     position:relative;
     height: 150px;
-    overflow: hidden;
+    max-width: 900px;
+  min-width: 900px;
     text-align: center;
+  left: 50%;
+  margin-left: -450px;
 }
 
 .project a {
@@ -372,14 +375,32 @@ iframe {
 
 .project-image {
     width: auto;
+    transition: all, 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    border: 3px solid rgba(100, 221, 191, 1);
 }
 
-.project h1 {
+.project:hover .project-image {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+}
+
+.project:hover .project-name {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+}
+
+.project-name {
     font-size: 1.5em;
     position: absolute;
     font-family: Gadugi;
     color: white;
     top: 40px;
     left: 0;
-    right: 0;
+    right: 0;    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 }
