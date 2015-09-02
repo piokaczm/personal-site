@@ -55,5 +55,26 @@ describe('personalSite Controllers', function() {
     });
     
   });
+  
+  
+  describe('ProjectsController', function() {
+    var scope, ctrl, $httpBackend;
+    var images = {projectsList: ['src/img.jpg', 'src/img2.jpg']};
+    
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('json/images.json').respond(images);
+      scope = $rootScope.$new();
+      ctrl = $controller('ProjectsController', { $scope: scope });      
+    }));
+    
+    it('should provide images urls', function() {
+      expect(scope.projectsImages).toBeUndefined();
+      $httpBackend.flush();
+      expect(scope.projectsImages).toEqual(images);
+    });
+    
+    
+  });
                
 });

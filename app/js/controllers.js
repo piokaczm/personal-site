@@ -30,3 +30,13 @@ personalSiteController.controller("WorksController", ['$http', '$scope', functio
   }
   
 }]);
+
+personalSiteController.controller("ProjectsController", [ '$http', '$scope', function($http, $scope) {
+  
+  $http.get('json/images.json').success(function(data) {
+    $scope.projectsImages = data;
+  });
+  
+}]);
+                                                         
+                                                         

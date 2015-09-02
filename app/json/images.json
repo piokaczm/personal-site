@@ -9,5 +9,10 @@
      "css/images/7.jpg",
      "css/images/8.jpg",
      "css/images/9.jpg"
-     ]
+     ],
+  "projectsList": [
+    "css/images/kgo.jpg",
+    "css/images/portfolio.jpg",
+    "css/images/gyst.jpg"
+    ]
 }

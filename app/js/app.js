@@ -4,7 +4,8 @@
 var personalSite = angular.module('personalSite', [
   'ngRoute',
   'personalSiteControllers',
-  'personalSiteDirectives'
+  'personalSiteDirectives',
+  'personalSiteServices'
 ]);
 
 personalSite.config(['$routeProvider', function($routeProvider) {
