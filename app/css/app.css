@@ -356,3 +356,30 @@ iframe {
     opacity: 0.5;
 }
 
+/* PROJECTS */
+
+.project {
+    margin-top: 100px;
+    position:relative;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project a {
+    height: 150px;
+}
+
+.project-image {
+    width: auto;
+}
+
+.project h1 {
+    font-size: 1.5em;
+    position: absolute;
+    font-family: Gadugi;
+    color: white;
+    top: 40px;
+    left: 0;
+    right: 0;
+}

@@ -1,6 +1,6 @@
 var personalSiteDirectives = angular.module('personalSiteDirectives', []);
 
-personalSite.directive('cvBullets', function() {
+personalSiteDirectives.directive('cvBullets', function() {
   return {
     restrict: 'E',
     scope: {
