@@ -104,4 +104,24 @@ describe('personalSite', function() {
     
   });
   
+  describe('projects site', function() {
+    
+    beforeEach(function() {
+      projects.click();
+    });
+    
+    it('should display 3 images', function() {
+      expect(element.all(by.css('img')).count()).toEqual(3);
+    });
+    
+    it('should have links to 3 projects', function() {
+      expect(element.all(by.css('div p a')).count()).toEqual(3);
+      expect(element(by.css('div p a:nth-child(0)')).getText()).toEqual('KGO - Kolezenska Giełda Ostrokołowa');
+      expect(element(by.css('div p a:nth-child(1)')).getText()).toEqual('Portfolio');
+      expect(element(by.css('div p a:nth-child(2)')).getText()).toEqual('GYST - Get Your Shit Together');
+    });
+      
+    
+  });
+  
 });
