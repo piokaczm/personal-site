@@ -63,15 +63,15 @@ describe('personalSite Controllers', function() {
     
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('json/images.json').respond(images);
+      $httpBackend.expectGET('json/projects.json').respond(images);
       scope = $rootScope.$new();
       ctrl = $controller('ProjectsController', { $scope: scope });      
     }));
     
     it('should provide images urls', function() {
-      expect(scope.projectsImages).toBeUndefined();
+      expect(scope.projects).toBeUndefined();
       $httpBackend.flush();
-      expect(scope.projectsImages).toEqual(images);
+      expect(scope.projects).toEqual(images);
     });
     
     

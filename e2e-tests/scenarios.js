@@ -9,6 +9,9 @@ describe('personalSite', function() {
   var projects = element(by.repeater('link in links').row(2)).element(by.css('h1'));
   var works = element(by.repeater('link in links').row(3)).element(by.css('h1'));
   var contact = element(by.repeater('link in links').row(4)).element(by.css('h1'));
+  var kgo = element(by.repeater('project in projects').row(0)).element(by.css('h1'));
+  var gyst = element(by.repeater('project in projects').row(1)).element(by.css('h1'));
+  var portfolio = element(by.repeater('project in projects').row(2)).element(by.css('h1'));
   
   beforeEach(function() {
     browser.get('app/index.html#/home');
@@ -110,15 +113,34 @@ describe('personalSite', function() {
       projects.click();
     });
     
+    it('should navigate to proper project subsite', function() {
+      projects.click();
+      kgo.click();
+      expect(browser.getCurrentUrl()).toMatch(/\/projects\/kgo/);
+      projects.click();
+      gyst.click();
+      expect(browser.getCurrentUrl()).toMatch(/\/projects\/gyst/);
+      projects.click();
+      portfolio.click();
+      expect(browser.getCurrentUrl()).toMatch(/\/projects\/portfolio/);
+    });
+    
     it('should display 3 images', function() {
       expect(element.all(by.css('img')).count()).toEqual(3);
     });
     
     it('should have links to 3 projects', function() {
-      expect(element.all(by.css('div p a')).count()).toEqual(3);
-      expect(element(by.css('div p a:nth-child(0)')).getText()).toEqual('KGO - Kolezenska Giełda Ostrokołowa');
-      expect(element(by.css('div p a:nth-child(1)')).getText()).toEqual('Portfolio');
-      expect(element(by.css('div p a:nth-child(2)')).getText()).toEqual('GYST - Get Your Shit Together');
+      expect(element.all(by.css('section a')).count()).toEqual(3);
+      element.all(by.css('section h1')).getText().then(function(posts) {
+        var names = ['KGO - Kolezenska Giełda Ostrokołowa',
+                     'GYST - Get Your Shit Together',
+                     'Portfolio'];
+        var i = 0;
+        console.log(posts);
+        for(i; i <= 2; i++) {
+          expect(posts[i]).toEqual(names[i]);
+        }
+      })
     });
       
     
