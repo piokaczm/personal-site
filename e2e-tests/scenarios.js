@@ -90,4 +90,18 @@ describe('personalSite', function() {
     
   });
   
+  describe('contact site', function() {
+    
+    beforeEach(function() {
+      contact.click();
+    });
+    
+    it('should display contact info and e-mail address', function() {
+      expect(element(by.css('#contact_details')).isPresent()).toBe(true);
+      expect(element(by.css('#contact_headers')).isPresent()).toBe(true);
+      expect(element(by.css('div p a')).getText()).toEqual('p.kaczmarczyk@steinerstore.pl');
+    });
+    
+  });
+  
 });
