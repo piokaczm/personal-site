@@ -1,0 +1,18 @@
+<section class='screenshots'>
+
+</section>
+
+<section class='header'>
+  <h1>{{project.name}}</h1>
+  <p class="short-desc small">{{project.description.join(" ")}}</p>
+  <h6 class='subproject-header'>Technologies used: </h6>
+  <p class='technologies'>{{project.technologies.join(", ")}}</p>
+  <p>
+    <span class='small-margin'>Check it on GitHub :</span>
+    <a ng-href='{{project.github}}' class='github-link' target="_blank"> CLICK!</a>
+  </p>
+</section>
+
+<section class='description'>
+  <p>{{project.techDescription.join(" ")}}</p>
+</section>

@@ -9,3 +9,13 @@ personalSiteDirectives.directive('cvBullets', function() {
     templateUrl: 'partials/_cv-bullets.html'
   };
 });
+
+personalSiteDirectives.directive('subproject', function() {
+  return {
+    restrict: 'E',
+    scope: {
+      project: '='
+    },
+    templateUrl: 'partials/_subproject.html'
+  };
+});

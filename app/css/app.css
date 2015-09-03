@@ -47,11 +47,23 @@ h2 {
     cursor: default;
 }
 
+p {
+ font-family: GadugiRegular;
+}
+
 span {
     font-weight: bold;
     font-family: Gadugi;
 
 }
+
+.small {
+   font-size: 0.8em;
+}
+
+.small-margin {
+  margin: 5px 0 5px 0px;
+};
 
 #contact_container p {
     font-family: GadugiRegular;
@@ -356,17 +368,17 @@ iframe {
     opacity: 0.5;
 }
 
-/* PROJECTS */
+/* PROJECTS LIST*/
 
 .project {
     margin-top: 100px;
     position:relative;
     height: 150px;
     max-width: 900px;
-  min-width: 900px;
+    min-width: 900px;
     text-align: center;
-  left: 50%;
-  margin-left: -450px;
+    left: 50%;
+    margin-left: -450px;
 }
 
 .project a {
@@ -403,4 +415,41 @@ iframe {
     right: 0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
+}
+
+/* PROJECTS */
+
+.subproject_container {
+  max-width: 900px;
+  min-width: 600px;
+  position: relative;
+  margin: 80px auto 0 auto;
+}
+
+.subproject-header {
+ margin-bottom: 5px;
+}
+
+.short-desc {
+ margin-bottom: 10px;
+}
+
+section.header {
+ border-bottom: 1px solid rgba(233, 233, 233, 1);
+}
+
+p.technologies {
+ font-size: 0.7em;
+}
+
+.github-link {
+  font-family: Gadugi;
+  color: rgba(153, 153, 153, 1);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  color: black;
 }

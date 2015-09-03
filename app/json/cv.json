@@ -85,7 +85,7 @@
         "bullets": [
           "Work in progress",
           "RoR backend with AngularJS frontend",
-          "Tests based on Karma, Protractor, Rspec, Cucumber and FactoryGirl"
+          "Tests based on RSpec, Cucumber and FactoryGirl"
           ]
       }
     }

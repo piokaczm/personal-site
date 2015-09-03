@@ -19,7 +19,7 @@
   <nav class="menu_container"  ng-controller="NavController">
     <ul id="menu_list">
       <li class="menu_item"  ng-repeat='link in links'>
-        <a href='#/{{link}}'><h1 class="menu_header">{{link | uppercase}}</h1></a>
+        <a ng-href='#/{{link}}'><h1 class="menu_header">{{link | uppercase}}</h1></a>
       </li>
     </ul>
   </nav>
