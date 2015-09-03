@@ -48,7 +48,8 @@
      ],
    "github": "https://github.com/piokaczm/kgo",
    "thumbnail": "css/images/kgo.jpg",
-   "images": [],
+   "images": ["css/images/kgo/1.jpg", "css/images/kgo/2.jpg", "css/images/kgo/3.jpg"],
+   "thumbs": ["css/images/kgo/1_thumb.jpg", "css/images/kgo/2_thumb.jpg", "css/images/kgo/3_thumb.jpg"],
    "link": "kgo"
  },
  "gyst": {
@@ -72,7 +73,8 @@
      ],
    "github": "https://github.com/piokaczm/gyst",
    "thumbnail": "css/images/gyst.jpg",
-   "images": [],
+   "images": ["css/images/gyst/1.jpg", "css/images/gyst/2.jpg", "css/images/gyst/3.jpg"],
+   "thumbs": ["css/images/gyst/1_thumb.jpg", "css/images/gyst/2_thumb.jpg", "css/images/gyst/3_thumb.jpg"],
    "link": "gyst"
  },
  "portfolio": {
@@ -103,7 +105,8 @@
      ],
    "github": "https://github.com/piokaczm/personal-site",
    "thumbnail": "css/images/portfolio.jpg",
-   "images": [],
+   "images": ["css/images/portfolio/1.jpg", "css/images/portfolio/2.jpg", "css/images/portfolio/3.jpg"],
+   "thumbs": ["css/images/portfolio/1_thumb.jpg", "css/images/portfolio/2_thumb.jpg", "css/images/portfolio/3_thumb.jpg"],
    "link": "portfolio"
  }
 }

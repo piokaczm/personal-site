@@ -1,5 +1,5 @@
-<section class='screenshots' ng-repeat='image in project.images'>
-  <img class='screenshot' ng-src='{{image}}' />
+<section class='screenshots'>
+  <img ng-repeat='thumb in project.thumbs' class='screenshot' ng-src='{{thumb}}' />
 </section>
 
 <section class='header'>
