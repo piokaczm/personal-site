@@ -1,5 +1,5 @@
-<section class='screenshots'>
-
+<section class='screenshots' ng-repeat='image in project.images'>
+  <img class='screenshot' ng-src='{{image}}' />
 </section>
 
 <section class='header'>
@@ -8,8 +8,9 @@
   <h6 class='subproject-header'>Technologies used: </h6>
   <p class='technologies'>{{project.technologies.join(", ")}}</p>
   <p>
-    <span class='small-margin'>Check it on GitHub :</span>
-    <a ng-href='{{project.github}}' class='github-link' target="_blank"> CLICK!</a>
+    <a ng-href='{{project.github}}' class='github-link' target="_blank">
+      <span class='small-margin'>Check it on GitHub!</span>
+    </a>
   </p>
 </section>
 

@@ -141,6 +141,29 @@ describe('personalSite', function() {
           expect(posts[i]).toEqual(names[i]);
         }
       })
+
+      describe('subproject sites', function() {
+
+        beforeEach(function() {
+          var names = ['kgo', 'gyst', 'portfolio']
+          var i = 0
+        });
+
+        it('should display 3 sections with images, descriptions and github link', function() {
+          for(i, i<3, i++) {
+            browser.get('app/index.html#/' + names[i]);
+            expect(element.all(by.css('section')).count()).toEqual(3);
+            expect(element.all(by.css('img.screenshot')).count()).toEqual(3);
+            expect(element(by.binding('project.name')).isPresent()).toBe(true);
+            expect(element(by.binding('project.description')).isPresent()).toBe(true);
+            expect(element(by.binding('project.technologies')).isPresent()).toBe(true);
+            expect(element(by.binding('project.github')).isPresent()).toBe(true);
+            expect(element(by.binding('project.techDescription')).isPresent()).toBe(true);
+          }
+        });
+
+      });
+
     });
 
 
