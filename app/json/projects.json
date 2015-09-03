@@ -1,24 +1,107 @@
 {
  "kgo": {
    "name": "KGO - Kolezenska Giełda Ostrokołowa",
-   "description": "",
-   "techDescription": "",
+   "description": [
+     "KGO is an app created to fix the mess with the fixed gear bike parts trading. ",
+     "Since there are dozens of fb groups and auction sites in Poland alone, ",
+     "one can clearly feel overwhelmed by the number of places she has to visit ",
+     "while searching for a part. Then why not create a specialized place ",
+     "which will aggregate relevant data and will make the whole process of ",
+     "seeking and purchasing much simpler? That's what KGO aims to do!"
+     ],
+   "techDescription": [
+     "My main goal during the development was just to see if after going through",
+     " several books and tutorials, I'll be able to build my own web-app from ",
+     "scratch to deployment. It wasn't easy for me, but after a month of ",
+     "work the app was ready, and even though it still needs a lot of refactoring ",
+     "and some tweaks, I'm happy of it as it works as intended, and from now on ",
+     "I can use it as a reference point for developing my dev skills.\n",
+     "The app is based on Ruby on Rails framework and hosted on Heroku servers.",
+     "The layout was designed using Bootstrap 3, Sass, jQuery, JS and CoffeeScript.",
+     "In the core concept it's similar to apps like olx.pl, but as it's designed ",
+     "for narrow assortment, it is possible to maintain very simple UI. ",
+     "Because of it, a visitor can reach all crucial sites within 2-3 clicks./n",
+     "Base communication is handled by 'mail_form' gem, which makes it easy ",
+     "to create messages via forms and validate them, however if seller wants to ",
+     "communicate via Facebook, he can provide his profile link, which will be ",
+     "displayed next to the username./nThe images attached to an ad are uploaded ",
+     "to the cloud thanks to cloudinary's carrierwave plugin. When an ad is deleted ",
+     "pictures are removed from the cloud./n'Elasticsearch' gems provide full text ",
+     "search, and ads sorting is simplified by 'has_scope' gem.",
+     "Registration is possible only for invited users, so hit me up if you want one!"
+     ],
+   "technologies": [
+     "Ruby on Rails",
+     "Minitest",
+     "Bootstrap",
+     "Sass",
+     "jQuery",
+     "JavaScript",
+     "CoffeeScript",
+     "HTML",
+     "PostgreSQL",
+     "Heroku",
+     "SendGrid",
+     "Cloudinary",
+     "FontAwesome",
+     "Google Analytics"
+     ],
+   "github": "https://github.com/piokaczm/kgo",
    "thumbnail": "css/images/kgo.jpg",
    "images": [],
    "link": "kgo"
  },
  "gyst": {
    "name": "GYST - Get Your Shit Together",
-   "description": "",
-   "techDescription": "",
+   "description": [
+     "GYST is an annoying reminder. Provide your e-mail and tasks list with deadlines ",
+     "and from now on you'll be getting regular messages motivating you to get ",
+     "them done. In an odd way... maybe even very odd. And yes - you can't turn ",
+     "them off."
+   ],
+   "techDescription": [
+     "The goal of GYST is to learn how to make RoR backend and AngularJS frontend work together.",
+     "I also want to get deeper understanding of mailers, scheduling tasks and using ",
+     "non-ActiveRecord classes in an app. As in my previous work, and all the tutorials, ",
+     "the test suite was based on Minitest, I want to learn basics of RSpec, Cucumber, ",
+     "and Factory Girl.\nThe description will be updated while the deveopment process ",
+     "will go on."
+   ],
+   "technologies": [
+     "TBA"
+     ],
+   "github": "https://github.com/piokaczm/gyst",
    "thumbnail": "css/images/gyst.jpg",
    "images": [],
    "link": "gyst"
  },
  "portfolio": {
    "name": "Portfolio",
-   "description": "",
-   "techDescription": "",
+   "description": [
+     "They say everyone needs a portfolio nowadays. So here I am! But seriously - ",
+     "it's here so you could read a bit about me. Not only work-related stuff, ",
+     "but also something about my passions, or to get a basic image of who I am ",
+     "as a human being."
+   ],
+   "techDescription": [
+     "At first it was built as a simple HTML site with some jQuery for fancy animations.",
+     "However as I read dozens of blog entries about AngularJS, go through some tutorials, ",
+     "courses and guidelines, I thought it is a good idea to rewrite my portfolio and ",
+     "gain a deeper understanding of Angular basics during the process. And here it is. ",
+     "I even started to like JavaScript, which was beyond my dreams not longer than a ",
+     "month ago.\nThere is nothing that much complicated, but it let me know how ",
+     "to build an Angular app from scratch, use services and directives to make ",
+     "developer's life easier, and write unit and e2e tests using Karma and Protractor."
+   ],
+   "technologies": [
+     "AngularJS",
+     "HTML",
+     "CSS",
+     "JavaScript",
+     "Karma",
+     "Protractor"
+     ],
+   "github": "https://github.com/piokaczm/personal-site",
    "thumbnail": "css/images/portfolio.jpg",
    "images": [],
    "link": "portfolio"
