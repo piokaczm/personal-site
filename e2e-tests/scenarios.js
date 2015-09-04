@@ -136,7 +136,6 @@ describe('personalSite', function() {
                      'GYST - Get Your Shit Together',
                      'Portfolio'];
         var i = 0;
-        console.log(posts);
         for(i; i <= 2; i++) {
           expect(posts[i]).toEqual(names[i]);
         }
@@ -144,20 +143,17 @@ describe('personalSite', function() {
 
       describe('subproject sites', function() {
 
-        beforeEach(function() {
-          var names = ['kgo', 'gyst', 'portfolio']
-          var i = 0
-        });
-
         it('should display 3 sections with images, descriptions and github link', function() {
-          for(i, i<3, i++) {
-            browser.get('app/index.html#/' + names[i]);
+          var names = ['kgo', 'gyst', 'portfolio'];
+          var i = 0;
+          for(i; i<3; i++) {
+            browser.get('app/index.html#/projects/' + names[i]);
             expect(element.all(by.css('section')).count()).toEqual(3);
             expect(element.all(by.css('img.screenshot')).count()).toEqual(3);
             expect(element(by.binding('project.name')).isPresent()).toBe(true);
             expect(element(by.binding('project.description')).isPresent()).toBe(true);
             expect(element(by.binding('project.technologies')).isPresent()).toBe(true);
-            expect(element(by.binding('project.github')).isPresent()).toBe(true);
+            expect(element(by.css('a.github-link')).isPresent()).toBe(true);
             expect(element(by.binding('project.techDescription')).isPresent()).toBe(true);
           }
         });
