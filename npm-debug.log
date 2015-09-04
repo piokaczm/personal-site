@@ -1,28 +1,26 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'protractor' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'update' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.37
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'preprotractor', 'protractor', 'postprotractor' ]
-6 info preprotractor angular-seed@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info protractor angular-seed@0.0.0
-9 verbose unsafe-perm in lifecycle true
-10 info angular-seed@0.0.0 Failed to exec protractor script
-11 error angular-seed@0.0.0 protractor: `protractor e2e-tests/protractor.conf.js`
-11 error Exit status 1
-12 error Failed at the angular-seed@0.0.0 protractor script.
-12 error This is most likely a problem with the angular-seed package,
-12 error not with npm itself.
-12 error Tell the author that this fails on your system:
-12 error     protractor e2e-tests/protractor.conf.js
-12 error You can get their info via:
-12 error     npm owner ls angular-seed
-12 error There is likely additional logging output above.
-13 error System Linux 3.16.0-46-generic
-14 error command "/usr/bin/node" "/usr/bin/npm" "run" "protractor"
-15 error cwd /home/piotr/Projekty/personal-site/personal-site
-16 error node -v v0.10.37
-17 error npm -v 1.4.28
-18 error code ELIFECYCLE
-19 verbose exit [ 1, true ]
+5 info outdated updating undefined
+6 error Error: Invalid version: "1.0"
+6 error     at Object.module.exports.fixVersionField (/usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:183:13)
+6 error     at /usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
+6 error     at Array.forEach (native)
+6 error     at normalize (/usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
+6 error     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
+6 error     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
+6 error     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
+6 error     at evalmachine.<anonymous>:272:14
+6 error     at /usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/graceful-fs/graceful-fs.js:102:5
+6 error     at Object.oncomplete (evalmachine.<anonymous>:108:15)
+7 error If you need help, you may report this *entire* log,
+7 error including the npm and node versions, at:
+7 error     <http://github.com/npm/npm/issues>
+8 error System Linux 3.16.0-46-generic
+9 error command "/usr/bin/node" "/usr/bin/npm" "update"
+10 error cwd /home/piotr/Projekty/personal-site/personal-site
+11 error node -v v0.10.37
+12 error npm -v 1.4.28
+13 verbose exit [ 1, true ]
