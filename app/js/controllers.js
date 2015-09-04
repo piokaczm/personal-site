@@ -31,7 +31,7 @@ personalSiteController.controller("WorksController", ['$http', '$scope', functio
 
 }]);
 
-personalSiteController.controller("ProjectsController", [ '$http', '$scope', function($http, $scope) {
+personalSiteController.controller("ProjectsController", ['$http', '$scope', function($http, $scope) {
 
   $http.get('json/projects.json').success(function(data) {
     $scope.projects = data;

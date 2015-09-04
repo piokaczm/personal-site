@@ -15,6 +15,12 @@ personalSiteDirectives.directive('subproject', function() {
     restrict: 'E',
     scope: {
       project: '='
+      },
+      controller: function($scope, $element) {
+       $scope.img = 2;
+       $scope.setFullImage = function(index) {
+          $scope.img = index;
+      }
     },
     templateUrl: 'partials/_subproject.html'
   };
