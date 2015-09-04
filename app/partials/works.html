@@ -1,6 +1,6 @@
 <div id="works_container" ng-controller="WorksController">
   <h2 class='site-header'>Works</h2>
-  <div id="foto_container"><img id="big_foto" ng-src="{{mainImage}}" /></div>
+  <div id="foto_container"><img id="big_foto" ng-src="{{mainImage}}" ng-class='/></div>
   <ul id="thumbnails_list">
     <li class="thumbnail" ng-repeat='img in images.imageList'>
       <img class="thumb" ng-src="{{img}}" ng-click='setMainImage(img)'/>
