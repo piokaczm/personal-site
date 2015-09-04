@@ -1,10 +1,13 @@
 {
-  "name": "angular-seed",
+  "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "version": "1.0",
+  "description": "Piotr Kaczmarczyk's Portfolio",
+  "repository": "https://github.com/piokaczm/personal-site",
   "license": "MIT",
+  "engines": {
+    "node": "0.10.37"
+  },
   "devDependencies": {
     "bower": "^1.3.1",
     "http-server": "^0.6.1",
