@@ -1,0 +1,61 @@
+/* Routes animations */
+
+@keyframes move-in {
+  from {left: -200%;}
+  to {left: 0%;}
+}
+
+@-webkit-keyframes move-in {
+  from {left: -200%;}
+  to {left: 0%;}
+}
+
+@-moz-keyframes move-in {
+  from {left: -200%;}
+    to {left: 0%;}
+}
+
+@keyframes move-out {
+  from {left: 0%;}
+    to {left: -200%;}
+}
+
+@-moz-keyframes move-out {
+  from {left: 0%;}
+  to {left: -200%;}
+}
+
+@-webkit-keyframes move-out {
+  from {left: 0%;}
+    to {left: -200%;}
+}
+
+
+.view-container {
+  position: relative
+}
+
+.view.ng-enter, .view.ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.view.ng-enter {
+  -webkit-animation: 0.5s move-in;
+  -moz-animation: 0.5s move-in;
+  -o-animation: 0.5s move-in;
+  animation: 0.5s move-in;
+  z-index: 100;
+}
+
+.view.ng-leave {
+  -webkit-animation: 0.5s move-out;
+  -moz-animation: 0.5s move-out;
+  -o-animation: 0.5s move-out;
+  animation: 0.5s move-out;
+  z-index:99;
+}
+
+/* Gallery animations */

@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 var personalSite = angular.module('personalSite', [
   'ngRoute',
+  'ngAnimate',
   'personalSiteControllers',
   'personalSiteDirectives',
   'personalSiteServices'
