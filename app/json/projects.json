@@ -1,6 +1,6 @@
 {
  "kgo": {
-   "name": "KGO - Kolezenska Giełda Ostrokołowa",
+   "name": "KGO - Kolezenska Giełda Ostrokołowa (kagieo.pl)",
    "description": [
      "KGO is an app created to fix the mess with the fixed gear bike parts trading. ",
      "Since there are dozens of fb groups and auction sites in Poland alone, ",
@@ -91,8 +91,8 @@
      "However as I read dozens of blog entries about AngularJS, go through some tutorials, ",
      "courses and guidelines, I thought it is a good idea to rewrite my portfolio and ",
      "gain a deeper understanding of Angular basics during the process. And here it is. ",
-     "I even started to like JavaScript, which was beyond my dreams not longer than a ",
-     "month ago. There is nothing that much complicated, but it learned me ",
+     "I even started to like JavaScript, what was beyond my dreams not longer than a ",
+     "month ago. There is nothing that much complicated, but it taught me ",
      "to build an Angular app from scratch, use its' features to make ",
      "developer's life easier, and write unit and e2e tests using Karma and Protractor."
    ],
