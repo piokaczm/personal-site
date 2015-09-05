@@ -88,7 +88,7 @@
    ],
    "techDescription": [
      "At first it was built as a simple HTML site with some jQuery for fancy animations.",
-     "However as I read dozens of blog entries about AngularJS, go through some tutorials, ",
+     "However as I read dozens of blog entries about AngularJS and went through some tutorials, ",
      "courses and guidelines, I thought it is a good idea to rewrite my portfolio and ",
      "gain a deeper understanding of Angular basics during the process. And here it is. ",
      "I even started to like JavaScript, what was beyond my dreams not longer than a ",
