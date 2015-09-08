@@ -25,3 +25,14 @@ personalSiteDirectives.directive('subproject', function() {
     templateUrl: 'partials/_subproject.html'
   };
 });
+
+personalSiteDirectives.directive('loadImage', function() {
+  return{
+    restrict: 'A',
+    link: function(scope, element) {
+      element.on('load', function() {
+        element.removeClass('image-hide');
+      });
+    }
+  };
+});

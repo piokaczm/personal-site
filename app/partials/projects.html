@@ -2,7 +2,7 @@
   <h2 class='site-header'>Projects</h2>
   <section class='project' ng-repeat='project in projects'>
     <a ng-href='#/projects/{{project.link}}'>
-      <img class='project-image' ng-src='{{project.thumbnail}}' />
+      <img class='project-image image-hide' ng-src='{{project.thumbnail}}' load-image/>
       <h1 class='project-name'>{{project.name}}</h1>
     </a>
   </section>

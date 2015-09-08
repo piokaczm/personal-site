@@ -1,8 +1,8 @@
 <section class='screenshots'>
   <div class='main-photo'>
-    <img ng-src='{{project.images[img]}}' class='full-photo'/>
+    <img ng-src='{{project.images[img]}}' class='full-photo image-hide' load-image/>
   </div>
-  <img ng-repeat='img in project.images' class='screenshot' ng-src='{{img}}' ng-click="$parent.setFullImage($index)"/>
+  <img ng-repeat='img in project.images' class='screenshot image-hide' ng-src='{{img}}' ng-click="$parent.setFullImage($index)" load-image/>
 </section>
 
 <section class='header'>

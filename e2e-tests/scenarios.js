@@ -132,7 +132,7 @@ describe('personalSite', function() {
     it('should have links to 3 projects', function() {
       expect(element.all(by.css('section a')).count()).toEqual(3);
       element.all(by.css('section h1')).getText().then(function(posts) {
-        var names = ['KGO - Kolezenska Giełda Ostrokołowa',
+        var names = ['Kolezenska Giełda Ostrokołowa - kagieo.pl',
                      'GYST - Get Your Shit Together',
                      'Portfolio'];
         var i = 0;

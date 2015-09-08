@@ -59,3 +59,7 @@
 }
 
 /* Gallery animations */
+
+.image-hide {
+  visibility: hidden;
+}
