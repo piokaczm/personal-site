@@ -53,30 +53,30 @@
    "thumbs": ["css/images/kgo/1_thumb.jpg", "css/images/kgo/2_thumb.jpg", "css/images/kgo/3_thumb.jpg"],
    "link": "kgo"
  },
- "gyst": {
-   "name": "GYST - Get Your Shit Together",
+ "godeploy": {
+   "name": "GoDeploy",
    "description": [
-     "GYST is an annoying reminder. Provide your e-mail and task list with deadlines ",
-     "and from now on you'll be getting regular messages motivating you to get ",
-     "them done. In an odd way... maybe even very odd. And yes - you can't turn ",
-     "them off."
+     "Simple deploy tool written in golang. ",
+     "build a binary using cross-compilation, "
+     "copy over to your remote server (or multiple servers at once)",
+     "restart binary over ssh and ",
+     "send notifications to Slack."
    ],
    "techDescription": [
-     "The goal of GYST is to learn how to make RoR backend and AngularJS frontend work together.",
-     "I also want to get deeper understanding of mailers, scheduling tasks and using ",
-     "non-ActiveRecord classes in an app, and as in my previous works ",
-     "the test suite was based on Minitest, I want to learn basics of RSpec, Capybara, ",
-     "and Factory Girl. The description will be updated when more work will be ",
-     "already done."
+     "We were looking at the company for a really dead simple deploy tool for Go microservices. ",
+     "Just copy a binary to multiple servers, restart service and notify slack channel. ",
+     "As we haven't found appropriate third-party software, I decided to write an open-source solution. ",
+     "Under the hood it's a simple wrapper for a bash script I wrote a bit earlier, feel free to ",
+     "look at the source code for detailed references :)"
    ],
    "technologies": [
-     "TBA"
+     "Golang"
      ],
-   "github": "https://github.com/piokaczm/gyst",
+   "github": "https://github.com/piokaczm/godeploy",
    "thumbnail": "css/images/gyst.jpg",
-   "images": ["css/images/gyst/1.jpg", "css/images/gyst/2.jpg", "css/images/gyst/3.jpg"],
-   "thumbs": ["css/images/gyst/1_thumb.jpg", "css/images/gyst/2_thumb.jpg", "css/images/gyst/3_thumb.jpg"],
-   "link": "gyst"
+   "images": [],
+   "thumbs": [],
+   "link": "godeploy"
  },
  "portfolio": {
    "name": "Portfolio",
