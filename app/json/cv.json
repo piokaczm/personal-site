@@ -80,12 +80,12 @@
           "Karma and Protractor tests"
           ]
       },
-      "gyst": {
-        "title": "GYST - Get Your Shit Together",
+      "godeploy": {
+        "title": "GoDeploy",
         "bullets": [
-          "Work in progress",
-          "RoR backend with AngularJS frontend",
-          "Tests based on RSpec, Cucumber and FactoryGirl"
+          "Golang based deployment tool",
+          "Copy binary to multiple servers",
+          "Notify slack channel"
           ]
       }
     }
